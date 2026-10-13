@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Movie Watchlist</title>
+</head>
+
+<body>
+    <main>
+        <h1>Movie Watchlist <i class="fa-solid fa-clapperboard"></i></h1>
+
+        <form id="movie-form">
+            <div class="mb-3" id="title-div">
+                <label for="movie-title" class="form-label">Movie Title</label>
+                <input type="text" id="movie-title" name="title" class="form-control">
+            </div>
+
+            <div class="mb-3" id="genre-div">
+                <label for="movie-genre" class="form-label">Genre</label>
+                <select id="movie-genre" name="genre" class="form-select">
+                    <option value="">Choose a genre</option>
+                    <option value="Action">Action</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Science Fiction">Science Fiction</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <button id="submit-button" type="submit" class="btn btn-primary" disabled>Add Movie</button>
+        </form>
+
+        <p id="form-message" class="text-danger" role="alert"></p>
+
+        <table class="table table-striped table-bordered" id="movieTable">
+            <thead>
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Genre</th>
+                    <th scope="col">Watched (Yes/No)</th>
+                    <th scope="col">Toggle Watched</th>
+                    <th scope="col">Delete Movie</th>
+                </tr>
+            </thead>
+            <tbody id="movie-list"></tbody>
+        </table>
+
+        <p id="empty-message" hidden>Your watchlist is empty. Add a movie to get started.</p>
+        <p id="no-data" hidden>You have no saved data, please add a movie to get started.</p>
+    </main>
+</body>
+
+</html>

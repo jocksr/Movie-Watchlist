@@ -1,0 +1,146 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #EEEEEE;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #181C24;
+    border: 2px solid #D5AE62;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+h1 {
+    margin: 0 0 25px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 32px;
+    color: #E5BD68;
+    border-bottom: 2px solid #454B59;
+}
+
+/* Form */
+#movie-form {
+    padding: 20px;
+    background-color: #232936;
+    border: 1px solid #454B59;
+    border-radius: 8px;
+}
+
+#title-div, #genre-div {
+    border: thin solid #d4caca;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+#movie-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #E5BD68;
+}
+
+#movie-form input, #movie-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #222222;
+    background-color: #FFF8E8;
+    border: 1px solid #D5AE62;
+    border-radius: 5px;
+}
+
+#movie-form button, #movieTable button {
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#movie-form button, #movieTable .btn-primary {
+    color: #221A0B;
+    background-color: #E5BD68;
+}
+
+#movie-form button:hover, #movieTable .btn-primary:hover {
+    background-color: #F4D392;
+}
+
+#movieTable .btn-danger {
+    color: #FFFFFF;
+    background-color: #9F3446;
+}
+
+#movieTable .btn-danger:hover {
+    background-color: #B84558;
+}
+
+#movieTable {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+}
+
+#movieTable th, #movieTable td {
+    padding: 12px;
+    border: 1px solid #454B59;
+    text-align: left;
+    vertical-align: middle;
+    box-shadow: none;
+}
+
+#movieTable th {
+    color: #181C24;
+    background-color: #E5BD68;
+}
+
+#movieTable td {
+    color: #EEEEEE;
+    background-color: #202632;
+}
+
+#movieTable tr:hover td {
+    background-color: #30394B;
+}
+
+#form-message {
+    font-weight: bold;
+    color: #FF9696;
+}
+
+#empty-message, #no-data {
+    margin-top: 20px;
+    text-align: center;
+    color: #C3C7CF;
+}
+
+#movieTable .btn-primary {
+    width: 160px;
+    white-space: nowrap;
+}
+
+.new-movie {
+    animation: slideIn 0.4s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
